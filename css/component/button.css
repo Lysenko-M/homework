@@ -1,0 +1,54 @@
+.button {
+    display: flex;
+    position: relative;
+    padding: 12px 14px 12px 14px;
+    background-color: #5094f2;
+    color: #fff;
+}
+
+.button-sign {
+    padding-left: 62px;
+}
+
+.button-sign::before  {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+}
+
+.button-sign::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 15px;
+    top: 30%;
+    left: 25px;
+    border-color: #5094f2;
+    border-top: 4px solid #5094f2;
+    border-left: 4px solid #5094f2;
+    transform: rotate(-135deg)
+}
+
+.button:hover {
+    color: #5094f2;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover::before {
+    background-color: #5094f2;
+    transition: background-color 0.3s;
+}
+
+.button:hover::after {
+    border-color: #fff;
+    transition: background-color 0.3s;
+}
