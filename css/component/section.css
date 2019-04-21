@@ -3,9 +3,18 @@
 }
 
 .container {
+    padding: 15px 10px;
     margin: 0 auto;    
     position: relative;
 }
+
+.header-nav {
+    padding: 15px 10px;
+    margin: 0 auto;    
+    position: relative;
+}
+
+
 
 .card-background {
     max-width: 137px;
@@ -41,6 +50,10 @@
     .container {
         max-width: 640px;
         padding: 30px 15px;
+    }
+
+    .header-nav {
+        max-width: 640px;
     }
 }
 
